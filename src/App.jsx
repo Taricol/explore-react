@@ -8,19 +8,42 @@ function App() {
     <>
       
       <h1>React Core Concepts</h1>
-      <Student name="Tahmid" dept="SWE"></Student>
+      {/* <Student name="Tahmid" dept="SWE"></Student>
       <Student name="Sakib" dept="CSE"></Student>
       <Person></Person>
       <Developer name="Mozumder" tech="JS"></Developer>
       <Developer name="Rajon" tech="Phython"></Developer>
       <Developer name="Shabana" tech="Java"></Developer>
-
-      
-
+      <Player name="tamim" runs="5000"></Player>
+      <Player name="Mushi" runs="50000"></Player>
+      <Salami event="Rojar Eid" amount="20"></Salami>
+      <Salami event="Graduation"></Salami> */}
       
     </>
   )
 }
+
+function Salami({event,amount=0}){
+  return(
+    <div className='student'>
+      <p>Salami For : {event}</p>
+      <p>Amount : {amount}</p>
+    </div>
+  )
+}
+
+
+const {name,runs}= {name: 'Mozumder', tech: 'JS'}
+function Player({name,runs}){
+  return(
+    <div className='student'>
+      <h3>Name : {name}</h3>
+      <p>Runs : {runs}</p>
+    </div>
+  )
+}
+
+//const {name,tech}= {name: 'Mozumder', tech: 'JS'}
 
 function Developer(props){
   console.log(props);
